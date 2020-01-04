@@ -1,0 +1,304 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Color, typography and basic layout */
+/* Fonts */
+@font-face {
+    font-family: 'Cinzel';
+    src: url('fonts/Cinzel-Bold.eot');
+    src: url('fonts/Cinzel-Bold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Cinzel-Bold.woff2') format('woff2'),
+        url('fonts/Cinzel-Bold.woff') format('woff'),
+        url('fonts/Cinzel-Bold.ttf') format('truetype'),
+        url('fonts/Cinzel-Bold.svg#Cinzel-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cinzel';
+    src: url('fonts/Cinzel-Regular.eot');
+    src: url('fonts/Cinzel-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Cinzel-Regular.woff2') format('woff2'),
+        url('fonts/Cinzel-Regular.woff') format('woff'),
+        url('fonts/Cinzel-Regular.ttf') format('truetype'),
+        url('fonts/Cinzel-Regular.svg#Cinzel-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'VT323';
+    src: url('fonts/VT323-Regular.eot');
+    src: url('fonts/VT323-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/VT323-Regular.woff2') format('woff2'),
+        url('fonts/VT323-Regular.woff') format('woff'),
+        url('fonts/VT323-Regular.ttf') format('truetype'),
+        url('fonts/VT323-Regular.svg#VT323-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aleo-Light';
+    src: url('fonts/Aleo-Light.eot');
+    src: url('fonts/Aleo-Light.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Aleo-Light.woff2') format('woff2'),
+        url('fonts/Aleo-Light.woff') format('woff'),
+        url('fonts/Aleo-Light.ttf') format('truetype'),
+        url('fonts/Aleo-Light.svg#VT323-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+html { scroll-behavior: smooth; }
+body {
+    font: 100% 'Aleo-Light', serif;
+    color: #011126;
+}
+h1 {
+    font-family: 'Cinzel';
+    font-weight: bold;
+    font-size: 3em;
+    letter-spacing: 0.075em;
+    margin-bottom: 20px;
+    color: #0d0000;
+}
+ul#nav {
+    font: 1.5em 'Cinzel', serif;
+    font-weight: normal;
+    letter-spacing: 0.1em;
+    background-color: #048abf;
+}
+section#about p {
+    font-size: 1.875em;
+    text-align: justify;
+}
+section#services {
+    background-color: #f2f2f2;
+}
+    section#services p {
+        font-size: 1.25em;
+        letter-spacing: 0.05em;
+        text-align: justify;
+    }
+section#contact table {
+    font-size: 2.25em;
+}
+    section#contact table input {
+        font-family: 'Aleo-Light', serif;
+        font-size: 1em;
+    }
+    section#contact table textarea {
+        font-family: 'Aleo-Light', serif;
+        font-size: 1em;
+        resize: none;
+    }
+footer {
+    font: 16px 'Cinzel', serif;
+    font-weight: normal;
+    background-color: #049dbf;
+}
+
+/* Structure */
+
+/* Shared */
+div#container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+header, footer {
+    clear: both;
+}
+section, footer {
+    padding: 30px;
+}
+header {
+    text-align: center;
+    padding: 30px 30px 0 30px;
+}
+    header img {
+        max-width: 100%;
+    }
+ul#nav {
+    margin-bottom: 10px;
+}
+    ul#nav li {
+        list-style: none;
+    }
+    ul#nav a {
+        text-decoration: none;
+        display: block;
+        color: #011126;
+        position: relative;
+        -webkit-transition: all .3s linear .2s;
+        -moz-transition: all .3s linear .2s;
+        -ms-transition: all .3s linear .2s;
+        -o-transition: all .3s linear .2s;
+        transition: all .3s linear .2s;
+    }
+img#banner {
+    max-width: 100%;
+}
+section#services div div img {
+    max-width: 100%;
+}
+section#contact p {
+    margin-bottom: 10px;
+    margin-left: 40px;
+    padding: 10px;
+    border: 5px solid red;
+}
+section#contact table {
+    width: 100%;
+}
+    section#contact table td {
+        padding: 5px;
+    }
+    section#contact table input {
+        height: 45px;
+        width: 100%;
+    }
+    section#contact table textarea {
+        height: 200px;
+        width: 100%;
+    }
+    section#contact .table-col-1 {
+        width: 30%;
+        text-align: right;
+        vertical-align: top;
+    }
+    section#contact .table-col-2 {
+        width: 65%
+    }
+    section#contact div {
+        text-align: right;
+    }
+    section#contact div > input {
+        height: 45px;
+        width: 90px;
+        font: 16px 'Cinzel', serif;
+        font-weight: bold;
+        color: #048abf;
+    }
+footer p {
+    display: inline-block;
+    text-align: left;
+    width: 45%;
+}
+    footer p img {
+        margin-bottom: -10px;
+    }
+footer span {
+    display: inline-block;
+    text-align: right;
+    width: 45%;
+}
+    footer span img:first-child {
+        margin-right: 15px;
+    }
+/*Desktop*/
+@media screen and (min-width:701px) and (max-width:800px) {
+    body {
+        font-size: 85%;
+    }
+}
+@media screen and (min-width:601px) and (max-width:700px) {
+    body {
+        font-size: 75%;
+    }
+}
+@media screen and (min-width:501px) and (max-width:600px) {
+    body {
+        font-size: 65%;
+    }
+}
+@media screen and (min-width:481px) and (max-width:500px) {
+    body {
+        font-size: 55%;
+    }
+}
+@media screen and (min-width:481px) {
+    header {
+        margin-bottom: -30px;
+    }
+    ul#nav {
+        text-align: center;
+        padding: 0;
+        height: 60px;
+    }
+        ul#nav li {
+            float: left;
+            width: 16.67%;
+        }
+        ul#nav li:last-child {
+            float: right;
+        }
+        ul#nav a {
+            line-height: 60px;
+        }
+        ul#nav a:hover {
+            background-color: #0d0000;
+            color: white;
+        }
+        ul#nav #menubuttons {
+            display: none;
+        }
+    section#services div div {
+        display: inline-block;
+        width: 45%;
+        margin-bottom: 30px;
+    }
+        section#services .service-img {
+            padding-right: 20px;
+            text-align: center;
+        }
+}
+/*Mobile*/
+@media screen and (max-width:480px) {
+    body {
+        font-size: 80%;
+    }
+    header {
+        margin-bottom: -15px;
+    }
+    ul#nav {
+        padding: 0;
+    }
+        ul#nav li {
+            display: block;
+        }
+        ul#nav a {
+            padding: 10px;
+        }
+        .menuhide {
+            display: none;
+            
+        }
+        .menushow {
+            display: block;
+        }
+        ul#nav #menubuttons {
+            display: block;
+        }
+        ul#nav #menubutton-show {
+            background-color: #048abf;
+            text-align: center;
+        }
+        ul#nav #menubutton-hide {
+            background-color: #0d0000;
+            text-align: center;
+        }
+        ul#nav #menubutton-show a, ul#nav #menubutton-hide a {
+            padding: 0;
+        }
+    section#services div div {
+        display: block;
+        margin-bottom: 30px;
+    }
+        section#services .service-img {
+            text-align: center;
+        }
+}
